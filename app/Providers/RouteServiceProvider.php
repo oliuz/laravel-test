@@ -23,7 +23,12 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        
+        //Encoded Forward Slashes
+
+        Route::pattern('search', '.*');
+
+        // boot
 
         parent::boot();
     }
