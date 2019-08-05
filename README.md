@@ -22,3 +22,17 @@ En el archivo resources encontrará todos los archivos de idiomas soportadas por
 /resources
     /lang
 ```
+
+## ¿Cómo usarlo?
+
+Clonar el repositorio
+
+```
+git clone https://github.com/dmpb/laravel-config.git
+```
+
+Instalar composer
+
+```
+composer install
+```
