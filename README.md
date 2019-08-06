@@ -50,3 +50,12 @@ Instalar composer
 ```
 composer install
 ```
+Crear el archivo .env y copiar los parametros del archivo .env.example
+
+Y crear tu APP_KEY
+
+```
+php artisan key:generate
+
+php artisan serve
+```
