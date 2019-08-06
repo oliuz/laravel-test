@@ -4,6 +4,7 @@ Es una configuración personalizada de Laravel. Incluye paquetes importantes par
 ## ¿Qué incluye?
 En el archivo composer.json encontrará la siguiente configuración:
 
+Producción
 ```json
 "require": {
     "php": "^7.1.3",
@@ -14,6 +15,19 @@ En el archivo composer.json encontrará la siguiente configuración:
     "laravel/tinker": "^1.0",
     "maatwebsite/excel": "^3.1"
 }
+```
+
+Desarrollo
+```json
+"require-dev": {
+    "barryvdh/laravel-debugbar": "^3.2",
+    "beyondcode/laravel-dump-server": "^1.0",
+    "filp/whoops": "^2.0",
+    "fzaninotto/faker": "^1.4",
+    "mockery/mockery": "^1.0",
+    "nunomaduro/collision": "^3.0",
+    "phpunit/phpunit": "^7.5"
+},
 ```
 
 En el archivo resources encontrará todos los archivos de idiomas soportadas por Laravel. Es libre de eliminar los archivos que no es dispensable para su aplicación. Los idiomas estan extraidos de [caouecs/Laravel-lang](https://github.com/caouecs/Laravel-lang)
