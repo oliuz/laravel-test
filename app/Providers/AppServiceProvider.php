@@ -6,6 +6,8 @@ use Illuminate\Support\ServiceProvider;
 
 use Illuminate\Support\Facades\Schema;
 
+use Illuminate\Support\Facades\Blade;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -28,5 +30,11 @@ class AppServiceProvider extends ServiceProvider
         //Index Lengths & MySQL / MariaDB
 
         Schema::defaultStringLength(191);
+
+        // Blade Components
+
+        Blade::component('components.alert', 'alert');
+
+
     }
 }
