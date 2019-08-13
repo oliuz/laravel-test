@@ -61,6 +61,9 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            .text-primary{
+                color: dodgerblue;
+            }
         </style>
     </head>
     <body>
@@ -68,12 +71,12 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">@lang('Home')</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('login') }}">@lang('Login')</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+                            <a href="{{ route('register') }}">@lang('Register')</a>
                         @endif
                     @endauth
                 </div>
@@ -81,17 +84,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Daniel Ponce
                 </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                <div>
+                    <p>Una APP de pruebas, para entender Laravel.</p>
+                    <p><a href="https://github.com/dmpb/laravel-test" class="text-primary">My GitHub</a></p>
                 </div>
             </div>
         </div>
