@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\View\View;
 
 class ViewServiceProvider extends ServiceProvider
 {
@@ -14,6 +15,7 @@ class ViewServiceProvider extends ServiceProvider
     public function register()
     {
         //
+        // view()->composer('welcome', 'App\Http\View\Composers\ExampleComposer');
     }
 
     /**
